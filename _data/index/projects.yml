@@ -1,0 +1,16 @@
+- name: "블록체인을 이용한 동물 기록관리 웹 서비스"
+  descr: "Linux 환경에서 cli, Visual studio 툴로 개발을 진행했습니다. 
+  프론트는 Angular(TypeScript,JavaScript), 백엔드는 NodeJs로 구현하였으며
+  Json형식으로 데이터를 저장 관리하는 mongodb와 연동했습니다.
+  서버는 AWS EC2에서 호스팅 했습니다."
+  image: 동물LIST2.PNG
+  github: https://github.com/OHHAKO/BLDOG
+
+- name: "미허용 소프트웨어 감지 시스템"
+  descr: "Window 환경에서 eclipse 툴로 개발을 진행했습니다. 
+  프론트는 JavaScript, jsp 백엔드는 Java로 구현하였으며
+  데이터 영구저장을 위해 MySql과 연동했습니다.
+  Mqtt프로토콜을 연결하여 실시간으로 데이터를 수신받고 XML로 저장,파싱하여 
+  Ajax기법으로 페이지를 동적 출력했습니다."
+  image: 미허캣아키텍처.png
+  github: https://github.com/OHHAKO/Meercat

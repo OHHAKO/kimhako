@@ -1,27 +1,78 @@
-# JudgementAgainApplication
+# Update 07/09/2018
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+I'm planning to refactor Leonids theme!!!
 
-## Development server
+The goal is really simple: make documentation more intuitive and deployment simpler!!!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Here is the plan:
 
-## Code scaffolding
+| Version | Description | Date |
+| --- | --- | --- |
+| 1.1 | Jekyll version deployable with gem | 07/15/2018 |
+| 1.2 | New features: Pagination, Prev/Next post | 07/22/2018 |
+| 2.0 | Gatsby or Vuepress version (vote in Issues) | who knows... |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+As the project was and will be designed to improve your writing experience, only documentation, gem, deployment process with CI relevant PRs are acceptable in the future.
 
-## Build
+I want you to know how much I value your support.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Share it to your timeline!
 
-## Running unit tests
+# Update 05/06/2016
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
 
-## Running end-to-end tests
+This project is under MIT license, so feel free to make it your own.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Leonids Jekyll Themes
 
-## Further help
+**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## What is Leonids?
+
+* Responsive templates. Looking good on mobile, tablet, and desktop.
+* Simple and clear permalink structure.
+* Support for Disqus Comments.
+* Support for multi-authors.
+* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
+
+See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
+
+## Quick setup
+
+```
+git clone https://github.com/renyuanz/leonids
+cd leonids
+jekyll server
+```
+
+Check out your awesome blog at `http://localhost:4000` and Cheers!
+
+## Running with Docker
+
+```
+docker run --rm -it --volume=$PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --force_polling
+```
+
+## Resume Page by [@Skn0tt](https://github.com/Skn0tt)
+Leonids features a simple resume page. It is divided up into five sections:
+
+* Bio (Edit \_data/index/careers.yml)
+* Education (Edit \_data/index/education.yml)
+* Skills (Edit \_data/index/skills.yml)
+* Projects (Edit \_data/index/projects.yml)
+* About (Edit \_includes/sections/about.html)
+
+You can put all your info into these files, and they will be featured on the resume page.
+
+## TODO
+
+- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
+- [ ] Multi languages support.
+- [ ] post font color (li, blockquote, bio, post-meta ..)
+- [ ] post letter space
+- [ ] add tag trobule shooting
+- [ ] find english font
+
+## Reference site
+- https://www.emojicopy.com/

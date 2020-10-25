@@ -1,0 +1,24 @@
+- layout: left
+  name: Backend
+  description: | # this will include new lines to allow paragraphs
+    * Java, NodeJS <br>
+    * Spring Boot, Spring MVC <br>
+    * JPA, Hibernate <br>
+    * Rest API <br>
+    * Eclipse, Visual Studio Code 
+- layout: left
+  name: Frontend
+  description: | # this will include new lines to allow paragraphs
+    * Angular <br>
+    * Typescript, html , JavaScript , Jquery <br>
+    * Npm
+- layout: left
+  name: Development Tech
+  description: | # this will include new lines to allow paragraphs
+    * C, Python <br>
+    * MySQL, MongoDB <br>
+    * Blockchain Hyperledger Fabric <br>
+    * AWS Cloud Service, EC2, RDS(Mysql), S3, Atlas  <br>
+    * Tomcat <br>
+    * MQTT Protocol <br>
+    * Linux Centos 
