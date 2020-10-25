@@ -6,11 +6,7 @@
 title: kimhako
 email:
 description: Hako Development Archive
-<<<<<<< HEAD
 url: "https://ohhako.github.io/kimhako.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-=======
-url: "https://ohhako.github.io/kimhako.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
->>>>>>> d77543f339a7e9353c746dcdefe9adf4daad0786
 baseurl: "" # the subpath of your site, e.g. "/blog"
 keywords: ["blog", "jekyll"]
 
