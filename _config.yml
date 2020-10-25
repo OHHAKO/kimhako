@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: Ohhako
+title: kimhako
 email:
 description: Hako Development Archive
 url: "https://OHHAKO.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -34,7 +34,7 @@ kramdown:
 ####################################
 #
 owner:
-  name: Hako
+  name: KimHako
   avatar: handog.png
   job: #"Software Engineering"
   bio: "WEB DEVELOPER"
