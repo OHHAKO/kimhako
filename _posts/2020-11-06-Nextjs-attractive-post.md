@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[Next.js] Next.js 의 매력에 대하여"
+title: "[NextJS] Next.js 의 매력에 대하여"
 excerpt: "Next.js 프로젝트를 개발하며 느낀 nextjs의 장점과 특징"
-categories: [Next.js]
+categories: [NextJS]
 comments: true
-tags: [Next.js]
-credit: vercel
+tags: [NextJS]
+credit: NextJS
 creditlink: https://github.com/OHHAKO
 ---
 
