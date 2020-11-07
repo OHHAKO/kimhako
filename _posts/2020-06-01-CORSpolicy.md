@@ -24,19 +24,17 @@ Angular 컴포넌트에서 localhost:3000에서 실행중인 REST에 자원을 �
 
 # CORS란 대체 무엇일까?
 
-CORS는 **Cross Origin Resource Sharing**의 줄임말이다. **교차 출처 리소스 공유**라는 뜻으로 다른 출처에서 자원을 공유하는 상황을 의미한다. CORS의 상황에서는 동일 출처 정책(Same-Origin Policy)로 인해서 브라우저에서 보안 목적으로 **자원 접근을 차단**시킨다. 내 상황의 경우 포트4200 Angular에서 포트3000 REST API에 자원을 요청하여 에러가 발생했다. 요청한 출처와 요청된 출처의 **도메인이나 포트번호**가 상이한 경우 서로 다른 출처라고 인식한다. 이처럼 CORS는 자기 로컬에서 개발할때 서버에서 로컬에 있는 자원에 접근하거나 서버에 자원을 요청하는 매커니즘에서 종종 나타난다. 
+CORS는 **Cross Origin Resource Sharing**의 줄임말이다. **교차 출처 리소스 공유**라는 뜻으로 다른 출처에서 자원을 공유하는 상황을 의미한다. CORS의 상황에서는 동일 출처 정책(Same-Origin Policy)로 인해서 브라우저에서 보안 목적으로 **자원 접근을 차단**시킨다. 내 상황의 경우 포트4200 Angular에서 포트3000 REST API에 자원을 요청하여 에러가 발생했다. 요청한 출처와 요청된 출처의 **도메인이나 포트번호**가 상이한 경우 서로 다른 출처라고 인식한다. 이처럼 CORS는 자기 로컬에서 개발할때 서버에서 로컬에 있는 자원에 접근하거나 서버에 자원을 요청하는 매커니즘에서 종종 나타난다.
 
 ## 구체적으로 서로 다른 출처란 무엇일까?
 
 <img src="/img/URI구조.png" />
 
-브라우저는 요청한 출처와 요청된 출처의 **도메인이나 포트번호**가 상이한 경우 **서로 다른 출처**라고 인식한다. URI와 URL이 가리키는 자원의 범위는 다르니 제대로 구분하여 넘어가자. CORS가 주의하는건 `호스트와 도메인` 이다. 내 상황의 경우 동일한 local host 였지만 port가 달라서 '서로 다른 애플리케이션'의 자원이므로 CORS가 제한하는 대상이다. </BR>
-그럼 보통 사이트 주소는 어떨까? </br>
+브라우저는 요청한 출처와 요청된 출처의 **도메인이나 포트번호**가 상이한 경우 **서로 다른 출처**라고 인식한다. URI와 URL이 가리키는 자원의 범위는 다르니 제대로 구분하여 넘어가자. CORS가 주의하는건 `호스트와 도메인` 이다. 내 상황의 경우 동일한 local host 였지만 port가 달라서 '서로 다른 애플리케이션'의 자원이므로 CORS가 제한하는 대상이다. <br/>
+그럼 보통 사이트 주소는 어떨까? <br/>
 URI가 `https://www.naver.com/abc`인 경우 naver.com이 도메인이고 /abc 는 path를 가리킨다. 따라서 도메인이 naver.com/ 로 들어오는 호출은 **서로 같은 출처**로 인식되어 CORS 제한 대상이 아니다.
 
-
 다음은 CORS를 해결하기 위해 구체적으로 클라이언트와 서버 앱에서 어떤 작업이 필요한지 코드로 알아보자.
-
 
 ## Angular (클라이언트 사이드) 작업
 
@@ -53,11 +51,16 @@ $ npm g s HttpConfigInterceptorService
 - http 관련 모듈 임포트
 - HttpInterceptor 인터페이스 구현
 - intercept 메서드 작성
-    - request에 `자격 인증` 추가
+  - request에 `자격 인증` 추가
 
 ```typescript
 import { Injectable } from "@angular/core";
-import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from "@angular/common/http";
+import {
+  HttpInterceptor,
+  HttpRequest,
+  HttpHandler,
+  HttpEvent,
+} from "@angular/common/http";
 import { Observable } from "rxjs";
 
 @Injectable({
@@ -66,7 +69,10 @@ import { Observable } from "rxjs";
 export class HttpConfigInterceptorService implements HttpInterceptor {
   constructor() {}
 
-  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+  intercept(
+    request: HttpRequest<any>,
+    next: HttpHandler
+  ): Observable<HttpEvent<any>> {
     request = request.clone({
       withCredentials: true,
     });
@@ -122,7 +128,3 @@ app.use(cors(corsOption));
 - Access-Control-Expose-Headers: 브라우저에서 접근할 수 있도록 노출시키는 `response header`를 지정
 - Access-Control-Allow-Methods: 서버 자원에 접근 가능한 HTTP 메소드(GET, POST, PUT, DELETE) 지정
 - Access-Control-Allow-Headers: 실제 요청에서 사용하도록 HTTP Header를 가리키는 header 목록 저장
-
-
-
-

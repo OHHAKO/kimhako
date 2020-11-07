@@ -11,7 +11,7 @@ creditlink: https://github.com/OHHAKO
 
 # 뭐? Nextjs 버전이 벌써 10이야?
 
-27일에 munchen에서 `NextJS conference`가 있었다. 난 급한 약속이 생겨 라이브를 챙겨보진 못했으나 트위터에서 #nextjsconf 해시태그와 함께 Image Optimization, Image cache, CDN edge 등의 단어를 보았다. </br>
+27일에 munchen에서 `NextJS conference`가 있었다. 난 급한 약속이 생겨 라이브를 챙겨보진 못했으나 트위터에서 #nextjsconf 해시태그와 함께 Image Optimization, Image cache, CDN edge 등의 단어를 보았다. <br/>
 그리고 오늘 드디어 NextJS v.10 릴리즈 노트가 공식 홈페이지에 올라왔다. 사무실에서 Nextjs 프로덕트를 개발하면서 내가 사용하는 프레임워크의 최신 버전 정도는 파악해야 한다고 생각했다. 공식문서 읽는 습관을 들이는것도 중요하기 때문에 이 포스팅은 나를 위한 글이라고 생각한다.
 
 버전 10에서 출시된 기능, 주요기능을 요약해보았다.

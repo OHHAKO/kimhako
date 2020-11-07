@@ -31,7 +31,7 @@ Anuglar는 DOM을 조작하기 쉽게 도와주는 **프론트 프레임워크(f
 > Client Side Rendering (CSR) <br>
 > 클라이언트 단에서 html를 렌더링 (부분 렌더링 가능)
 > <br><br>
-> Search Engine Optimazation (SEO) <br>
+> Search Engine optimization (SEO) <br>
 > 검색 엔진 최적화
 
 ## Angular 기반 웹의 단점
