@@ -2,7 +2,7 @@
 layout: post
 title: "[mongoDB] mongodb atlas 사용기"
 excerpt: "angular에 사용할 데이터베이스를 mongodb altas에서 생성하고 호출하는 방법을 익히도록 하자."
-categories: [mongoDB, cloud]
+categories: [MongoDB]
 comments: true
 ---
 

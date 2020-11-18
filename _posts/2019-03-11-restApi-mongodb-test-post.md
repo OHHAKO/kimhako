@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[데이터베이스] Rest Server로 Mongodb 연동하기"
+title: "[MongoDB] Rest Server로 Mongodb 연동하기"
 excerpt: "Atlas Mongod를 이용하기 위한 Rest API를 작성해보자"
-categories: [database]
+categories: [MongoDB]
 modified: 2019-03-11
 comments: true
 ---

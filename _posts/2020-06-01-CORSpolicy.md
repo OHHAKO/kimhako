@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Trouble Shooting] CORS 정책 "
+title: "[Trouble Shooting] CORS 정책 Angular에서 해결하기"
 excerpt: "Angular와 REST에서 요청/응답 이용해 CORS 정책 에러를 해결하기"
 categories: [Trouble Shooting, Angular, REST]
 comments: true

@@ -2,7 +2,7 @@
 layout: post
 title: "[기타글] 내가 보려고 정리한 개발관련 포스트 1탄- 취업편"
 excerpt: "내가 개발직을 준비하며 많은 도움이 되었던 포스트를 정리해 보았다."
-categories: [기타]
+categories: [기타글]
 comments: true
 ---
 

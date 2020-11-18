@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[클라우드] What is cloud computing?"
-excerpt: "Let's about Cloud computing"
+title: "[cloud] 클라우드 컴퓨팅 이해하기"
+excerpt: "클라우드를 이용하기 전 클라우드 컴퓨팅이 무엇인지 공부하고 기록한 글"
 categories: [cloud]
 comments: true
 ---
