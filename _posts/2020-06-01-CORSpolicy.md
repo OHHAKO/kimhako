@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Trouble Shooting] CORS 정책 Angular에서 해결하기"
-excerpt: "Angular와 REST에서 요청/응답 이용해 CORS 정책 에러를 해결하기"
-categories: [Trouble Shooting, Angular, REST]
+title: "[Trouble Shooting] CORS 정책 서버측에서 해결하기"
+excerpt: "Nodejs 기반 서버에서 요청/응답 이용해 CORS 정책 에러를 해결하기"
+categories: [Trouble Shooting, Nodejs]
 comments: true
 ---
 
@@ -20,7 +20,7 @@ Access tp XMLHttpRequest at 'localhost:3000/user/ron12' from origin http://local
 
 ### 에러 설명
 
-Angular 컴포넌트에서 localhost:3000에서 실행중인 REST에 자원을 요청했는데 에러가 발생했다. 꽤나 자주 보이던 익숙한 에러 메세지. CORS policy에 의해 자원요청이 **blocked** 되었단다. 이 에러는 몇년 전 구글 확장 프로그램 'Allow CORS:Access-Control-Allow-Origin'을 설치해서 편리하게 해결했던 기억이 난다. 지금은 앱스토어에서 그 프로그램이 삭제된 것 같다. 그럼 어떻게 해결해야 할까? 여러가지 방법이 있지만 나는 **'Request With Credentia'**라고 하는 `인증 방식`을 선택했다. 이 인증 방식은 `클라이언트 사이드`와 `서버 사이드` 양측 모두 작업이 필요하다. 그 전에 **CORS의 정체가 무엇인지** 아래에 간단히 요약한다.
+Angular 컴포넌트에서 localhost:3000에서 실행중인 REST서버에 자원을 요청했는데 에러가 발생했다. 꽤나 자주 보이던 익숙한 에러 메세지. CORS policy에 의해 자원요청이 **blocked** 되었단다. 이 에러는 몇년 전 구글 확장 프로그램 'Allow CORS:Access-Control-Allow-Origin'을 설치해서 편리하게 해결했던 기억이 난다. 지금은 앱스토어에서 그 프로그램이 삭제된 것 같다. 그럼 어떻게 해결해야 할까? 여러가지 방법이 있지만 나는 **'Request With Credentia'**라고 하는 `인증 방식`을 선택했다. 이 인증 방식은 `클라이언트 사이드`와 `서버 사이드` 양측 모두 작업이 필요하다. 그 전에 **CORS의 정체가 무엇인지** 아래에 간단히 요약한다.
 
 # CORS란 대체 무엇일까?
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[mongoDB] 자주쓰이는 mongodb 쿼리"
+title: "[mongoDB] 자주쓰이는 mongodb Mongoose 라이브러리 쿼리"
 excerpt: "mongdb에 데이터를 읽고 저장하는 쿼리 정리"
-categories: [mongoDB]
+categories: [MongoDB]
 comments: true
 ---
 
