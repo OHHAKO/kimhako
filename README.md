@@ -46,6 +46,10 @@ cd leonids
 jekyll server
 ```
 
+```
+bundle exec jekyll serve
+```
+
 Check out your awesome blog at `http://localhost:4000` and Cheers!
 
 ## Running with Docker
