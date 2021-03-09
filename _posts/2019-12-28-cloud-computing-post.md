@@ -8,7 +8,7 @@ comments: true
 
 # Cloud computing
 
-![Precoure_mission_step](/img/cloud-computing.JPG)
+![Precoure_mission_step](/kimhako/img/cloud-computing.JPG)
 
 ### What is cloud?
 
