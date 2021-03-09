@@ -19,14 +19,14 @@ comments: true
  세가지 미션에는 각 Programming 요구사항이 주어지는데 이를 고려하는게 매우 중요하다. <br>
  문제풀고, 피드백받고. 반복이다.
 ### 진행단계
-![Precoure_mission_step]({{"/img/미션진행순서.jpg"| relative_url}})
+<img src='{{ "/img/미션진행순서.jpg" | relative_url }}'>
 
 미션은 group git repository에 업로드 되므로 웹에서 깃저장소에 fork 했다. <br>
 그 이후엔 git bash를 사용해 clone, branch, commit, push, pull request 를 모두 진행했다.<br>
 프로젝트 구현은 이클립스(Eclipse) 개발툴을 이용했다.
 
 ### 요구사항 변화
-![Precoure_mission_step]({{"/img/미션요구사항.png"| relative_url}})
+<img src='{{ "/img/미션요구사항.png" | relative_url }}'>
 
 단계를 거치는 동안 요구사항에 어떤 변화가 있었을까.<br>
 들여쓰기 깊이(indent depth)가 줄어들고<br>
