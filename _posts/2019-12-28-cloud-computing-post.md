@@ -8,7 +8,7 @@ comments: true
 
 # Cloud computing
 
-![Precoure_mission_step](/kimhako/img/cloud-computing.JPG)
+<img src='{{ "/img/cloud-computing.JPG" | relative_url }}' alt="cloud-computing">
 
 ### What is cloud?
 

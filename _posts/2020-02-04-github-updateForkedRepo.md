@@ -7,7 +7,7 @@ comments: true
 ---
 
 <!-- ![img load fail](/img/fork_repository_update.png) -->
-<img src="/img/fork_repository_update.png" width="75%" height="40%"/>
+<img src='{{ "/img/fork_repository_update.png" | relative_url }}' alt="fork-repo-local-update" width="75%" height="40%">
 
 ### 작업 설명
 Original 저장소로부터 최신 정보를 가져와 fork해온 저장소를 **업데이트 시키는** 작업이다.<br>

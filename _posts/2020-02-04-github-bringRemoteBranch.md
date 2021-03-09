@@ -35,7 +35,8 @@ comments: true
    - GitBash에 <code>\$git init</code> 명령어 입력
    - 새 폴더에 .git 파일이 생성되었다.
 
-![img load fail](/img/gitbash/1init.JPG)
+<img src='{{ "/img/gitbash/1init.JPG" | relative_url }}' alt="gitbash-load">
+
 
 2. 작업폴더에 깃허브 **원격저장소** 를 추가한다
    - 사용자가 가져오고싶은 깃허브 원격저장소 페이지에 들어간다
@@ -46,27 +47,28 @@ comments: true
    - 새폴더에 원격저장소에 있는 파일이 복사된것 확인
    - <code> \$git remote -v</code> 명령어로 작업폴더와 원격저장소 잘 연결되었는지 확인
 
-![img load fail](/img/gitbash/2remote 원격저장소.JPG)
+<img src='{{ "/img/gitbash/2remote 원격저장소.JPG" | relative_url }}' alt="remote-repo">
 
 3. 작업폴더에 가져온 브랜치를 확인한다
-   - 로컬저장소 브랜치 목록확인 <code> \$git branch </code>
+   - 로컬저장소 브랜치 목록확인 <code> \$git branch -l</code>
    - 원격저장소 브랜치 목록확인 <code> \$git branch -r </code>
    - 모든 브랜치 목록확인 <code> \$git branch -a </code>
    - 아무것도 안떠야 정상
 
-![img load fail](/img/gitbash/3branch목록확인.JPG)
+<img src='{{ "/img/gitbash/3branch목록확인.JPG" | relative_url }}' alt="branch-list">
 
-4. 작업폴더에 원격저장소를 업데이트 시킨다
+4. **작업폴더에 원격저장소를 업데이트 시킨다**
    - 업데이트 명령어 <code> \$git remote update </code>
 
-![img load fail](/img/gitbash/4remoteUpdate.JPG)
+<img src='{{ "/img/gitbash/4remoteUpdate.JPG" | relative_url }}' alt="remote-update">
+
 이제 branch목록을 확인해보자
 
 5. 작업폴더에 가져온 브랜치를 확인한다
    - 원격저장소 브랜치 목록확인 <code> \$git branch -r </code>
    - 원격저장소의 브랜치를 가져온 것을 확인할 수 있다.
 
-![img load fail](/img/gitbash/5목록확인.JPG)
+<img src='{{ "/img/gitbash/5목록확인.JPG" | relative_url }}' alt="branch-list">
 
 6. 작업폴더에서 브랜치를 전환한다
 
@@ -75,7 +77,7 @@ comments: true
    - 이제 설정된 branch에서 자유로이 작업할 수 있다.
    - 다시 master로 돌아가려면 <code> git checkout master </code>
 
-![img load fail](/img/gitbash/6checkout.JPG)
+<img src='{{ "/img/gitbash/6checkout.JPG" | relative_url }}' alt="branch-change">
 
 <br>
 

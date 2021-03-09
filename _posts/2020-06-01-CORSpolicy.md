@@ -12,7 +12,8 @@ comments: true
 
 크롬 콘솔창에서 확인한 에러 메세지 입니다.
 
-![img load fail](/img/error/cors.JPG) <br>
+<img src='{{ "/img/error/cors.JPG" | relative_url }}' alt="cors-error">
+<br>
 
 ```
 Access tp XMLHttpRequest at 'localhost:3000/user/ron12' from origin http://localhost:4200'has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.
@@ -28,7 +29,7 @@ CORS는 **Cross Origin Resource Sharing**의 줄임말이다. **교차 출처 �
 
 ## 구체적으로 서로 다른 출처란 무엇일까?
 
-<img src="/img/URI구조.png" />
+<img src='{{ "/img/URI구조.png" | relative_url }}' alt="uri-structure">
 
 브라우저는 요청한 출처와 요청된 출처의 **도메인이나 포트번호**가 상이한 경우 **서로 다른 출처**라고 인식한다. URI와 URL이 가리키는 자원의 범위는 다르니 제대로 구분하여 넘어가자. CORS가 주의하는건 `호스트와 도메인` 이다. 내 상황의 경우 동일한 local host 였지만 port가 달라서 '서로 다른 애플리케이션'의 자원이므로 CORS가 제한하는 대상이다. <br/>
 그럼 보통 사이트 주소는 어떨까? <br/>

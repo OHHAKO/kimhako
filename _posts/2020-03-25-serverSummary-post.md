@@ -6,7 +6,7 @@ categories: [기타글]
 comments: true
 ---
 
-<img src="/img/server.jpg" width="500px" height="300px"/>
+<img src='{{ "/img/server.jpg" | relative_url }}' alt="remote-create-branch" width="500px" height="300px">
 
 ## 서버 개념 요약정리
 

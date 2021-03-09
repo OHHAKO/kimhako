@@ -11,7 +11,7 @@ comments: true
 어느날 이클립스를 실행시켰더니 프로그램은 동작하지 않고 <br>
 에러 메세지만 홀연히 남겼습니다..
 
-<img src="/img/eclipse_error_13.png" width="490px" height="550px">
+<img src='{{ "/img/eclipse_error_13.png" | relative_url }}' alt="eclipse-error-message" width="490px" height="550px">
 
 가장 위에 보이는 이 기록이 에러 이름인듯 합니다.
 
@@ -41,7 +41,7 @@ Oracle 사이트에 들어가서 자바를 삭제하고 다시 깔겠습니다. 
 
 1. 제어판 > 프로그램 삭제 > 프로그램 목록에서 java, java update plattform 삭제
 2. [자바 공식사이트](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)에 들어가서 windows x64용 java 다운받기. 버전과 관련있는 노란색 표시를 잘 확인해주세요.
-   <img src="/img/javawindow64.png" width="400px" height="400px">
+   <img src='{{ "/img/javawindow64.png" | relative_url }}' width="400px" height="400px">
 
 3. 다운받은 설치파일 실행시켜서 자바 인스톨 시작. 위치는 default로 설정
 
@@ -49,7 +49,7 @@ Oracle 사이트에 들어가서 자바를 삭제하고 다시 깔겠습니다. 
    (예를들어 저같은 경우 C:\Program Files\Java\jdk1.8.0_201 )
 
 5. 기존의 Path 변수에 `%JAVA_HOME%\bin` 추가
-   <img src="/img/javahome.png" width="400px" height="500px">
+   <img src='{{ "/img/javahome.png" | relative_url }}' width="400px" height="500px">
 
 6. cmd 창을 열어 `javac -version` 명령어를 입력하면 나오는 새 버전 확인
 

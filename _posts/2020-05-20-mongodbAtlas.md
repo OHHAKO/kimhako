@@ -22,7 +22,7 @@ comments: true
 
 ## Atlas 수행 순서
 
-<img src="/img/mongodb_cluster.JPG">
+<img src='{{ "/img/mongodb_cluster.JPG" | relative_url }}' alt="mongodb-cluster" width="700px" height="400px">
 
 - Atlas 계정 생성 후 로그인
 - 클러스터 생성. free 버전/GCP/싱가폴 리전 선택

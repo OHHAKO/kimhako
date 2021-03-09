@@ -13,7 +13,9 @@ comments: true
 
 
 ## 깃허브 웹에서 브랜치(branch) 만드는 방법
-![img load fail](/img/createBranch1.JPG)  <br>
+
+<img src='{{ "/img/gitbash/createBranch1.JPG" | relative_url }}' alt="remote-create-branch">
+
 1. 원하는 저장소에 들어가기 
 <br>
 

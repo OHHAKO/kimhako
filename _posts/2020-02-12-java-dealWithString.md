@@ -17,7 +17,9 @@ String, StringBuffer, StringBuilder 는 모두 String 문자열을 저장하고 
 - 연산이 많아지는 경우 StringBuilder > StringBuffer >>> String
 
 ### 자바 메모리 공간 구조
-<img src="/img/java_memory.jpg" width="380px" height="450px"/>
+
+<img src='{{ "/img/java_memory.jpg" | relative_url }}' alt="java-memory" width="380px" height="450px">
+
 <small>출처:ohhako</small>
 
 ### String 클래스

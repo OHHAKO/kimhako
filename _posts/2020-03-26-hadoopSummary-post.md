@@ -40,7 +40,9 @@ comments: true
     - 저장할 용량이 늘어나면 물리적 서버 컴퓨터를 추가할 수 있습니다.
 
 ### 하둡 구성 (에코시스템)
-<img src="/img/HadoopEcoSystem.png" width="55%" height="45%" /> <br>
+
+<img src='{{ "/img/HadoopEcoSystem.png" | relative_url }}' alt="Hadoop-ecoSystem.png" width="55%" height="45%">
+<br>
 
 하둡은 **단일 서버**에서 수천대의 머신으로 **확장 할 수 있도록** 설계되어 있습니다. <br>
 중앙 시스템(하둡)에 활용성을 높이기 위해 여러가지 소프트웨어를 추가한 모델을 **에코시스템**이라 부릅니다. <br>
@@ -96,7 +98,8 @@ comments: true
 
 <br>
 
-<img src="/img/HDFS구조.JPG" width="750px" height="400px" /> <br>
+<img src='{{ "/img/HDFS구조.JPG" | relative_url }}' alt="Hadoop-ecoSystem.png" width="750px" height="400px">
+<br>
 
 - DataNode는 여러 파일 블록을 저장하고 있다
 - NameNode는 HDFS의 Master역할을 한다
