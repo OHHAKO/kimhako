@@ -10,6 +10,12 @@ url: "https://ohhako.github.io" # the base hostname & protocol for your site e.g
 baseurl: "/kimhako" # the subpath of your site, e.g. "/blog"
 keywords: ["blog", "jekyll"]
 
+defaults:
+  - scope:
+      path: "kimhako/"
+    values:
+      image: true
+
 #
 ###################################
 # Jekyll configuration
