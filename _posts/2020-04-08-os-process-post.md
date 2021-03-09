@@ -57,7 +57,7 @@ comments: true
 
 ## 프로세스 상태
 
-<img src="/img/프로세스상태도.png" width="700px" height="400px">
+<img src='{{ "/img/프로세스상태도.png" | relative_url }}' width="700px" height="400px">
 
  위는 프로세스의 상태 변화를 그림으로 나타낸 **프로세스 상태도** 입니다. <br>
 프로세스는 실행되면서 상태가 변합니다. 프로세스의 상태를 결정하는 요인은 그 프로세스의 현재 활동입니다. <br>
